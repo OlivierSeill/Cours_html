@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Galerie de Voyage</title>
+    <style>
+        /* Petit peu de CSS pour mettre les images côte à côte */
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        img {
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Mes Destinations de Rêve</h2>
+
+    <div class="gallery">
+        <!-- Image 1 -->
+        <img src="https://picsum.photos/400/300?random=1" alt="Plage de sable blanc avec des palmiers sous un ciel bleu"
+            loading="lazy">
+
+        <!-- Image 2 : Transformée en lien -->
+        <a href="https://www.google.com/maps" target="_blank">
+            <img src="https://picsum.photos/400/300?random=2"
+                alt="Sommet enneigé des montagnes alpines avec un lac turquoise au premier plan" loading="lazy">
+        </a>
+
+        <!-- Image 3 -->
+        <img src="https://picsum.photos/400/300?random=3"
+            alt="Rue animée d'une ville ancienne avec des bâtiments historiques aux façades colorées" loading="lazy">
+    </div>
+</body>
+</html>
