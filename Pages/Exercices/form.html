@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <p>Merci de renseigner un maximum d'information</p>
+    <div class="container">
+    <form method="post" action="register.php">
+        <!-------------------------- Coordonnées -------------------------->
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre Nom">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom">
+            <label for="mail">Email :</label>
+            <input type="text" name="mail" id="mail" placeholder="exemple@mail.com" required>
+            <br>
+            <label for="telNumber">Numéro de téléphone :</label>
+            <input type="number" name="telNumber" id="telNumber" minlength="10" maxlength="10"
+            placeholder="00 XX XX XX XX">
+            <br>
+            <label for="country">Pays :</label>
+            <select name="country" id="country">
+                <option value="france">France</option>
+                <option value="other">Autre</option>
+            </select>
+            <label for="adress">Adresse postale:</label>
+            <input type="text" name="adress" id="adress" placeholder="Numéro, Rue, Complément">
+        </fieldset>
+        <!-------------------------- Identifiants -------------------------->
+        <fieldset>
+            <legend>Choisissez vos identifiants</legend>
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+            <br>
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required>
+            <br>
+            <label for="mdpC">Confirmer votre mot de passe :</label>
+            <input type="password" name="mdpC" id="mdpC" placeholder="Mot de passe">
+        </fieldset>
+        <!-------------------------- Date et lieu de naissance -------------------------->
+        <fieldset>
+            <legend>Vos date et lieu de naissance</legend>
+            <label for="dateOfBirth">Date de naissance :</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth">
+            <br>
+            <label for="birthPlace">Ville de naissance :</label>
+            <input type="text" name="birthPlace" id="birthPlace">
+            <br>
+            <label for="nation">Pays de naissance :</label>
+            <select name="nation" id="nation">
+                <option value="germany">Allemagne</option>
+                <option value="belgium">Belgique</option>
+                <option value="spain">Espagne</option>
+                <option value="france">France</option>
+                <option value="italy">Italie</option>
+                <option value="uk">Royaume-Uni</option>
+                <option value="other">Autre</option>
+            </select>
+        </fieldset>
+        <!--------------------------Description-------------------------->
+        <fieldset>
+            <legend>Décrivez-vous en quelques lignes :</legend>
+            <textarea name="description" id="description" maxlength="300" 
+            rows="5" cols="40" placeholder="300 caractères">
+            </textarea>
+            <br><label for="sexe">Quel est votre sexe :</label>
+            <input type="radio" name="sexe" id="sexe" value="male">
+            <label for="male">Masculin</label>
+            <input type="radio" name="sexe" id="sexe" value="female">
+            <label for="female">Féminin</label>
+            <input type="radio" name="sexe" id="sexe" value="nonBinary">
+            <label for="nonBinary">Non-binaire</label>
+        </fieldset>
+        <!--------------------------Préférences-------------------------->
+        <fieldset>
+            <legend>Préférences :</legend>
+            <fieldset>
+                <legend>Parmis ces propositions quels sont vos centres d'intérêt :</legend>
+                <input type="checkbox" name="interest" id="sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" name="interest" id="music">
+                <label for="music">Musique</label>
+                <input type="checkbox" name="interest" id="cinema">
+                <label for="cinema">Cinéma</label>
+                <input type="checkbox" name="interest" id="photo">
+                <label for="photo">Photo</label>
+                </fieldset>
+            <br>
+            <label for="opt_in">Souhaitez-vous recevoir nos actualités :</label>
+            <input type="radio" name="opt_in" id="opt_in" value="yes" required>
+            <label for="yes">Oui</label>
+            <input type="radio" name="opt_in" id="opt_in" value="no">
+            <label for="no">Non</label>
+        </fieldset>
+    <input type="submit" value="Envoyer">
+    </form>
+    </div>
+</body>
+
+</html>

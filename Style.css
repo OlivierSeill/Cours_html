@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+}
+img {
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            height: auto;
+}
+:required {
+            border-color: red;
+}
+textarea{
+            background-color: lightgrey;
+            color: black;
+}
+nav {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            position: sticky; /* Le menu reste en haut en scrollant */
+            top: 10px;
+}
+nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+}
+nav a:hover {
+            text-decoration: underline;
+}
+section {
+            margin-top: 500px; /* Ajoute de l'espace pour tester le scroll vers le bas */
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+}
+.spacer {
+            height: 1000px; /* Espace factice pour simuler une longue page */
+            background: linear-gradient(to bottom, #eee, #ccc);
+            margin: 20px 0;
+}

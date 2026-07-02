@@ -3,20 +3,29 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Cours HTML CSS</title>
-    <link rel='stylesheet' href='main.css'>
+    <title>Home</title>
+    <link rel='stylesheet' href='Style.css'>
+    <!---------------Un peu de style pour rendre l'Accueil plus lisible------------------->
+    <style>body {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hel <br> lo</h1>
-    <h2>Hello</h2>
-    <h3>Hello</h3>
-    <h4>Hello</h4>
-    <h5>Hello</h5>
-    <h6>Hello</h6>
-    <p>Welcome to <strong>our</strong> world</p> 
-    <p>Welcome to<br/>our world</p> 
-    <p>Welcome to our <em>world</em> </p> 
-    <p>Welcome<br>to our world</p> 
-    <p> <mark>Welcome to</mark> our world</p> 
+    <div id="haut"></div>
+    <h1 style="margin-bottom: 20px;">Mon Portfolio</h1>
+    <nav>
+        <a href="#haut">Accueil</a>
+        <a href="#projets">Mes projets</a>
+        <a href="https://github.com/OlivierSeill">Mon profil Git</a>
+    </nav>
+    <p>Bienvenu(e) sur mon portfolio ! Je suis un développeur en formation.</p>
+    <div class="spacer"></div>
+    <section id="projets"></section>
+        <h3>Mes projets:</h3>
+
 </body>
 </html>
